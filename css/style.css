@@ -1,0 +1,256 @@
+
+html {
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+
+/* HEADER SECTION */
+
+.header {
+  max-width: 100%;
+  background-color: #f1f1f1;
+  height: 100px;
+  text-align: center;
+  border-style: solid;
+  border-width: 50px;
+  padding: 10px;
+  -webkit-border-image: url('../images/snowflakes.png') 50 round;
+ -o-border-image: url('../images/snowflakes.png') 50 round;
+  border-image: url('../images/snowflakes.png') 50 round;
+}
+
+.header > h2 {
+  color: #1995ad;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.5em;
+  font-weight: 900;
+  margin-top: 35px;
+  font-size: 1.4em;
+}
+
+h2 > ins {
+  background-color: #d5fcbc;
+}
+
+h3 {
+  color: #FFB2A5;
+}
+
+
+/* MAIN CONTENT SECTION */
+
+#main-content {
+  background-image: url('../images/vintage-background.jpg');
+  background-size: cover;
+  max-width: 100%;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 2.2fr 2fr;
+  grid-column-gap: 50px;
+}
+
+#game-container {
+  background-color: #548c92;
+  height: 600px;
+  width: 400px;
+  margin: 10% 0px 0px 16%;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 3px 3px #000;
+  perspective: 1000px;
+}
+
+.biathlon-sibling-card {
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.biathlon-sibling-card:active {
+  transform: scale(.97);
+  transition: transform .2s;
+}
+
+.biathlon-sibling-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.info-container {
+  color: #f1f1f1;
+  font-family: 'Press Start 2P', cursive;
+  height: 50%;
+  width: 95%;
+  font-size: 1em;
+  margin-top: 20%;
+  margin-right: 5%;
+  font-weight: 900;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+}
+
+#biathletes-info {
+  background-image: url('../images/biathletes-cheatsheet.jpg');
+  width: 1280px;
+  height: 800px;
+  position: absolute;
+  visibility: hidden;
+  left: 5%;
+  margin-top: 3%;
+  z-index: 100;
+  border: 10px solid #fff;
+}
+
+#close-biathletes-info {
+  font-size: 1.5em;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #ee2436;
+  color: white;
+  cursor: pointer;
+}
+
+
+/*  Media Queries  */
+
+
+@media only screen and (max-width: 1350px) {
+
+  #biathletes-info {
+    background-image: url('../images/biathletes-cheatsheet1350.jpg');
+    width: 800px;
+    height: 942px;
+    visibility: hidden;
+    left: 5%;
+    margin-top: 3%;
+    z-index: 100;
+    border: 6px solid #fff;
+  }
+}
+
+
+@media only screen and (max-width: 970px) {
+
+  #main-content {
+    max-width: 100%;
+    background-image: url('../images/vintage-background970.jpg');
+    background-size: cover;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 2.2fr 2fr;
+    grid-column-gap: 50px;
+  }
+
+  #game-container {
+    background-color: #548c92;
+    height: 600px;
+    max-width: 100%;
+    margin: 10% 0px 0px 8%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 3px 3px #000;
+    perspective: 1000px;
+  }
+
+  .info-container {
+    color: #f1f1f1;
+    font-family: 'Press Start 2P', cursive;
+    height: 50%;
+    max-width: 95%;
+    font-size: 1em;
+    margin-top: 20%;
+    margin-right: 5%;
+    font-weight: 900;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+
+
+  #main-content {
+    background-image: url('../images/vintage-background414.jpg');
+    background-size: cover;
+    max-width: 414px;
+    height: 1992px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .header > h2 {
+    color: #1995ad;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.5em;
+    font-weight: 900;
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  #game-container {
+    background-color: #548c92;
+    max-height: 600px;
+    max-width: 88%;
+    margin: 7% 2% 0px 4%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 7% 3px #000;
+    perspective: 1000px;
+    order: 2;
+  }
+
+  .info-container {
+    color: #f1f1f1;
+    font-family: 'Press Start 2P', cursive;
+    width: 95%;
+    max-height: 18%;
+    font-size: 0.7em;
+    margin: 10% 5% 3% 0px;
+    font-weight: 900;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 0px 3% 0px 3%;
+    order: 1;
+  }
+
+  #biathletes-info {
+    background-image: url('../images/biathletes-cheatsheet-mobile.jpg');
+    width: 355px;
+    height: 1799px;
+    visibility: hidden;
+    left: 5%;
+    margin-top: 3%;
+    z-index: 100;
+    border: 6px solid #fff;
+  }
+}
