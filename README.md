@@ -7,6 +7,7 @@ This is a classic memory game, personalized with siblings from biathlon.
 
 - Play here: [Biathlon Memory Game](https://silviurdr.github.io/memory-game-biathlon/)
 - Instructions available in the game page
+- After you discover all the siblings pair, you'll see a photo in which all the biathletes are presented.
 
 
 ### Tips
