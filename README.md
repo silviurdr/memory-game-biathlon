@@ -11,7 +11,7 @@ This is a classic memory game, personalized with siblings from biathlon.
 
 ### Technologies used
 
-- Vanilla JavaScript
+- JavaScript
 - CSS
 - HTML
 - Photoshop
