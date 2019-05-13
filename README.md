@@ -1,1 +1,1 @@
-# Memory Game Project (Biathlon Siblings Version)
+# Memory Game Project (Biathlon Version)
