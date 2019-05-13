@@ -7,6 +7,11 @@ This is a classic memory game, personalized with siblings from biathlon.
 - Vanilla JavaScript
 - CSS
 - HTML
+- Photoshop
+
+### Design
+
+Since this is a classic game, I've decided to give it a retro look. 
 
 ### Quick Intro
 
