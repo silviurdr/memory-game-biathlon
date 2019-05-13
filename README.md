@@ -2,6 +2,13 @@
 
 This is a classic memory game, personalized with siblings from biathlon. 
 
+### Quick Intro
+
+- Play here: [Biathlon Memory Game](https://silviurdr.github.io/memory-game-biathlon/)
+- Instructions available in the game page.
+- After you discover all the siblings pair, you'll see a brief presentation of all the biathletes.
+
+
 ### Technologies used
 
 - Vanilla JavaScript
@@ -9,15 +16,10 @@ This is a classic memory game, personalized with siblings from biathlon.
 - HTML
 - Photoshop
 
+
 ### Design
 
 Since this is a classic game, I've decided to give it a retro look. 
-
-### Quick Intro
-
-- Play here: [Biathlon Memory Game](https://silviurdr.github.io/memory-game-biathlon/)
-- Instructions available in the game page.
-- After you discover all the siblings pair, you'll see a brief presentation of all the biathletes.
 
 
 ### Tips
